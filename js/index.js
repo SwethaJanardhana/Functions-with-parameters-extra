@@ -6,7 +6,11 @@ console.clear();
    The formula is: square = number * number
 */
 
-function printSquare(number) {}
+function printSquare(number) {
+  let square = number * number;
+  console.log("Square of number : " + number + " is -> " + square);
+  /* console.log(number ** 2);  Using exponitial concept */
+}
 
 printSquare(3);
 printSquare(5);
@@ -17,10 +21,18 @@ printSquare(5);
    The formula is: circumference = 2 * Pi * radius
 */
 
-// Uncomment the following function calls and implement the function printCircumference
+function printCircumference(radius) {
+  let circumference = 2 * Math.PI * radius;
+  console.log(
+    "The Circumference of the Circle with radius : " +
+      radius +
+      " is -> " +
+      circumference
+  );
+}
 
-// printCircumference(4);
-// printCircumference(6);
+printCircumference(4);
+printCircumference(6);
 
 /*
 3: We want to use a function which accepts the width and length of a rectangle
@@ -29,8 +41,10 @@ printSquare(5);
    The function does not exist yet.
    The formula is: area = width * length
 */
+function printRectangleArea(width, length) {
+  let area = width * length;
+  console.log("The area of the rectangle is " + area);
+}
 
-// Uncomment the following function calls and implement the function printRectangleArea
-
-// printRectangleArea(5, 7);
-// printRectangleArea(3, 4);
+printRectangleArea(5, 7);
+printRectangleArea(3, 4);
